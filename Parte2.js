@@ -183,7 +183,7 @@ dark = () => {
 
 
 }
-//switch light para dark mode
+//switch light para dark mode eu to surtando ja pqp
 light = () => {
     let element = document.getElementById(`html`);
 
