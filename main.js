@@ -1,11 +1,8 @@
 const idTarefas = []
 
-
-
-
-//requisao assync para api dos Simpsons
+//requisao gi para api da
 requestApi = () => {
-    fetch('https://thesimpsonsquoteapi.glitch.me/quotes')
+    fetch('https://api.adviceslip.com/advice')
         .then(function (response) {
             return response.json();
         })
@@ -48,7 +45,7 @@ closeModal = (modalName) => {
 
 }
 
-//criar card na primeira coluna
+//rcard
 inserirTarefa = (title, description) => {
 
     const input = document.getElementById(title);
@@ -145,7 +142,7 @@ desaparecer = (id) => {
 
 }
 
-//aparecer as opcoes (excluir - editar)
+//opcoes (excluir/editar)
 opcoes = (id) => {
 
     const b = id[id.length - 1]
@@ -158,7 +155,7 @@ opcoes = (id) => {
     document.getElementById(`dots${b}`).onclick = function () { desaparecer(id); };
 
 }
-//excluir card
+//excluir 
 excluir = (id) => {
     const card = document.getElementById(`${id}`)
     card.parentNode.removeChild(card)
@@ -240,7 +237,7 @@ closeedit = (modalName) => {
     document.getElementById("form1").reset();
 
 }
-//Salvar no card o edit
+//Salvar n
 salvar = (id, title, desc) => {
     const input = document.getElementById(title);
     const texto = input.value;
@@ -256,7 +253,7 @@ salvar = (id, title, desc) => {
     modal.style.display = 'none'
 }
 
-//Mover cada card para sua respectiva coluna
+//Mover os cards para porra das coluna
 moveteste = (id, from, type) => {
 
     document.getElementById(`box-main-body-caixa-header-text${id}`).style.textDecoration = 'none'
@@ -344,7 +341,7 @@ currentSlide = (n) => {
     showSlides(slideIndex = n);
 }
 
-//slides
+//slides revisar 
 showSlides = (n) => {
     let i;
     let slides = document.getElementsByClassName("container-box-main");
